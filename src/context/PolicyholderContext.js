@@ -50,8 +50,7 @@ export const PolicyholderProvider = ({ children }) => {
     return node;
   };
 
-  // 根據特定code找節點 => 確保能夠在獲取整個樹結構後，快速找到所需的節點並設置為主節點。
-  // 這個過程使得我們能夠根據特定的保戶編號來定位節點，並且在需要時可以訪問其父節點。
+  // 根據特定code找節點 => 確保能夠在獲取整個樹結構後，快速找到所需的節點並設置為主節點
   const findNode = (node, code) => {
     if (!node) return null;
     if (node.code === code) return node;
