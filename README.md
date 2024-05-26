@@ -23,7 +23,7 @@
 ### 步驟 4: 啟動 React 項目(版本號^18.3.1)
 1. Clone此項目到本地：
    ```bash
-   git clone https://github.com/opsuuu/policyholder-relationship-binaryTreee.git
+   git clone https://github.com/opsuuu/policyholder-relationship-binaryTree.git
 
 
 ## 安裝使用套件
