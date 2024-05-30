@@ -1,1 +1,97 @@
-{"openapi":"3.0.0","info":{"title":"Policyholders","version":"1.0.0"},"servers":[{"url":"http://localhost:3000/"}],"paths":{"/api/policyholders":{"get":{"description":"保戶關係資料數據","responses":{"200":{"description":"獲取數據成功","content":{"application/json":{"example":"{\n  \"policyholder\": {\n    \"code\": \"0000000001\",\n    \"name\": \"{{firstName}} {{lastName}}\",\n    \"registration_date\": \"2023-01-01\",\n    \"introducer_code\": null,\n    \"left\": [\n      {\n        \"code\": \"0000000002\",\n        \"name\": \"{{firstName}} {{lastName}}\",\n        \"registration_date\": \"2023-01-11\",\n        \"introducer_code\": \"0000000001\",\n        \"left\": [\n          {\n            \"code\": \"0000000004\",\n            \"name\": \"{{firstName}} {{lastName}}\",\n            \"registration_date\": \"2023-01-17\",\n            \"introducer_code\": \"0000000001\",\n            \"left\": [\n              {\n                \"code\": \"0000000008\",\n                \"name\": \"{{firstName}} {{lastName}}\",\n                \"registration_date\": \"2023-02-05\",\n                \"introducer_code\": \"0000000004\",\n                \"left\": [\n                  {\n                    \"code\": \"0000000016\",\n                    \"name\": \"{{firstName}} {{lastName}}\",\n                    \"registration_date\": \"2023-03-20\",\n                    \"introducer_code\": \"0000000004\"\n                  }\n                ]\n              }\n            ],\n            \"right\": [\n              {\n                \"code\": \"0000000009\",\n                \"name\": \"{{firstName}} {{lastName}}\",\n                \"registration_date\": \"2023-02-10\",\n                \"introducer_code\": \"0000000004\",\n                \"left\": [\n                  {\n                    \"code\": \"0000000017\",\n                    \"name\": \"{{firstName}} {{lastName}}\",\n                    \"registration_date\": \"2023-04-05\",\n                    \"introducer_code\": \"0000000004\",\n                    \"left\": [\n                      {\n                        \"code\": \"0000000019\",\n                        \"name\": \"{{firstName}} {{lastName}}\",\n                        \"registration_date\": \"2023-05-02\",\n                        \"introducer_code\": \"0000000004\"\n                      }\n                    ],\n                    \"right\": [\n                      {\n                        \"code\": \"0000000020\",\n                        \"name\": \"{{firstName}} {{lastName}}\",\n                        \"registration_date\": \"2023-05-16\",\n                        \"introducer_code\": \"0000000004\"\n                      }\n                    ]\n                  }\n                ],\n                \"right\": [\n                  {\n                    \"code\": \"0000000018\",\n                    \"name\": \"{{firstName}} {{lastName}}\",\n                    \"registration_date\": \"2023-04-18\",\n                    \"introducer_code\": \"0000000001\"\n                  }\n                ]\n              }\n            ]\n          }\n        ],\n        \"right\": [\n          {\n            \"code\": \"0000000005\",\n            \"name\": \"{{firstName}} {{lastName}}\",\n            \"registration_date\": \"2023-01-18\",\n            \"introducer_code\": \"0000000001\",\n            \"left\": [\n              {\n                \"code\": \"0000000010\",\n                \"name\": \"{{firstName}} {{lastName}}\",\n                \"registration_date\": \"2023-02-12\",\n                \"introducer_code\": \"0000000005\"\n              }\n            ],\n            \"right\": [\n              {\n                \"code\": \"0000000011\",\n                \"name\": \"{{firstName}} {{lastName}}\",\n                \"registration_date\": \"2023-02-17\",\n                \"introducer_code\": \"0000000005\"\n              }\n            ]\n          }\n        ]\n      }\n    ],\n    \"right\": [\n      {\n        \"code\": \"0000000003\",\n        \"name\": \"{{firstName}} {{lastName}}\",\n        \"registration_date\": \"2023-01-15\",\n        \"introducer_code\": \"0000000001\",\n        \"left\": [\n          {\n            \"code\": \"0000000006\",\n            \"name\": \"{{firstName}} {{lastName}}\",\n            \"registration_date\": \"2023-01-19\",\n            \"introducer_code\": \"0000000003\",\n            \"left\": [\n              {\n                \"code\": \"0000000012\",\n                \"name\": \"{{firstName}} {{lastName}}\",\n                \"registration_date\": \"2023-02-19\",\n                \"introducer_code\": \"0000000001\"\n              }\n            ],\n            \"right\": [\n              {\n                \"code\": \"0000000013\",\n                \"name\": \"{{firstName}} {{lastName}}\",\n                \"registration_date\": \"2023-02-25\",\n                \"introducer_code\": \"0000000003\"\n              }\n            ]\n          }\n        ],\n        \"right\": [\n          {\n            \"code\": \"0000000007\",\n            \"name\": \"{{firstName}} {{lastName}}\",\n            \"registration_date\": \"2023-01-19\",\n            \"introducer_code\": \"0000000003\",\n            \"left\": [\n              {\n                \"code\": \"0000000014\",\n                \"name\": \"{{firstName}} {{lastName}}\",\n                \"registration_date\": \"2023-03-05\",\n                \"introducer_code\": \"0000000003\"\n              }\n            ],\n            \"right\": [\n              {\n                \"code\": \"0000000015\",\n                \"name\": \"{{firstName}} {{lastName}}\",\n                \"registration_date\": \"2023-03-06\",\n                \"introducer_code\": \"0000000003\"\n              }\n            ]\n          }\n        ]\n      }\n    ]\n  }\n}"}},"headers":{"Access-Control-Allow-Origin":{"schema":{"type":"string"},"example":"*"},"Access-Control-Allow-Methods":{"schema":{"type":"string"},"example":"GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"},"Access-Control-Allow-Headers":{"schema":{"type":"string"},"example":"Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"}}}}}}}}
+{
+  "uuid": "0ca220a9-a41e-4e59-96f6-0eb5273a24ea",
+  "lastMigration": 32,
+  "name": "Mockoon environment",
+  "endpointPrefix": "",
+  "latency": 0,
+  "port": 3005,
+  "hostname": "",
+  "folders": [],
+  "routes": [
+    {
+      "uuid": "bcbd63f6-9d85-4414-9b9d-c6296c48257f",
+      "type": "http",
+      "documentation": "Policyholders API",
+      "method": "get",
+      "endpoint": "api/policyholders",
+      "responses": [
+        {
+          "uuid": "8a607a48-5793-42eb-ad0e-55d9d475ce02",
+          "body": "{\"policyholder\":{\"code\":\"0000000001\",\"name\":\"John Doe\",\"registration_date\":\"2023-01-01\",\"introducer_code\":null,\"left\":[{\"code\":\"0000000002\",\"name\":\"Jane Doe\",\"registration_date\":\"2023-01-11\",\"introducer_code\":\"0000000001\",\"left\":[{\"code\":\"0000000004\",\"name\":\"Alice Doe\",\"registration_date\":\"2023-01-17\",\"introducer_code\":\"0000000001\",\"left\":[{\"code\":\"0000000008\",\"name\":\"Bob Doe\",\"registration_date\":\"2023-02-05\",\"introducer_code\":\"0000000004\",\"left\":[{\"code\":\"0000000016\",\"name\":\"Charlie Doe\",\"registration_date\":\"2023-03-20\",\"introducer_code\":\"0000000004\"}],\"right\":[{\"code\":\"0000000009\",\"name\":\"Dave Doe\",\"registration_date\":\"2023-02-10\",\"introducer_code\":\"0000000004\",\"left\":[{\"code\":\"0000000017\",\"name\":\"Eve Doe\",\"registration_date\":\"2023-04-05\",\"introducer_code\":\"0000000004\",\"left\":[{\"code\":\"0000000019\",\"name\":\"Frank Doe\",\"registration_date\":\"2023-05-02\",\"introducer_code\":\"0000000004\"}],\"right\":[{\"code\":\"0000000020\",\"name\":\"Grace Doe\",\"registration_date\":\"2023-05-16\",\"introducer_code\":\"0000000004\"}]}],\"right\":[{\"code\":\"0000000018\",\"name\":\"Hank Doe\",\"registration_date\":\"2023-04-18\",\"introducer_code\":\"0000000001\"}]}]}],\"right\":[{\"code\":\"0000000005\",\"name\":\"Ivy Doe\",\"registration_date\":\"2023-01-18\",\"introducer_code\":\"0000000001\",\"left\":[{\"code\":\"0000000010\",\"name\":\"Jack Doe\",\"registration_date\":\"2023-02-12\",\"introducer_code\":\"0000000005\"}],\"right\":[{\"code\":\"0000000011\",\"name\":\"Kathy Doe\",\"registration_date\":\"2023-02-17\",\"introducer_code\":\"0000000005\"}]}]}],\"right\":[{\"code\":\"0000000003\",\"name\":\"Leo Doe\",\"registration_date\":\"2023-01-15\",\"introducer_code\":\"0000000001\",\"left\":[{\"code\":\"0000000006\",\"name\":\"Mona Doe\",\"registration_date\":\"2023-01-19\",\"introducer_code\":\"0000000003\",\"left\":[{\"code\":\"0000000012\",\"name\":\"Nina Doe\",\"registration_date\":\"2023-02-19\",\"introducer_code\":\"0000000001\"}],\"right\":[{\"code\":\"0000000013\",\"name\":\"Oscar Doe\",\"registration_date\":\"2023-02-25\",\"introducer_code\":\"0000000003\"}]}],\"right\":[{\"code\":\"0000000007\",\"name\":\"Paul Doe\",\"registration_date\":\"2023-01-19\",\"introducer_code\":\"0000000003\",\"left\":[{\"code\":\"0000000014\",\"name\":\"Quinn Doe\",\"registration_date\":\"2023-03-05\",\"introducer_code\":\"0000000003\"}],\"right\":[{\"code\":\"0000000015\",\"name\":\"Rachel Doe\",\"registration_date\":\"2023-03-06\",\"introducer_code\":\"0000000003\"}]}]}]}]}}",
+          "latency": 0,
+          "statusCode": 200,
+          "label": "Default response",
+          "headers": [
+            {
+              "key": "Content-Type",
+              "value": "application/json"
+            }
+          ],
+          "bodyType": "INLINE",
+          "filePath": "",
+          "databucketID": "",
+          "sendFileAsBody": false,
+          "rules": [],
+          "rulesOperator": "OR",
+          "disableTemplating": false,
+          "fallbackTo404": false,
+          "default": true,
+          "crudKey": "id",
+          "callbacks": []
+        }
+      ],
+      "responseMode": "SEQUENTIAL"
+    }
+  ],
+  "rootChildren": [
+    {
+      "type": "route",
+      "uuid": "bcbd63f6-9d85-4414-9b9d-c6296c48257f"
+    }
+  ],
+  "proxyMode": false,
+  "proxyHost": "",
+  "proxyRemovePrefix": false,
+  "tlsOptions": {
+    "enabled": false,
+    "type": "CERT",
+    "pfxPath": "",
+    "certPath": "",
+    "keyPath": "",
+    "caPath": "",
+    "passphrase": ""
+  },
+  "cors": true,
+  "headers": [
+    {
+      "key": "Content-Type",
+      "value": "application/json"
+    },
+    {
+      "key": "Access-Control-Allow-Origin",
+      "value": "*"
+    },
+    {
+      "key": "Access-Control-Allow-Methods",
+      "value": "GET,POST,PUT,PATCH,DELETE,HEAD,OPTIONS"
+    },
+    {
+      "key": "Access-Control-Allow-Headers",
+      "value": "Content-Type, Origin, Accept, Authorization, Content-Length, X-Requested-With"
+    }
+  ],
+  "proxyReqHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "proxyResHeaders": [
+    {
+      "key": "",
+      "value": ""
+    }
+  ],
+  "data": [],
+  "callbacks": []
+}

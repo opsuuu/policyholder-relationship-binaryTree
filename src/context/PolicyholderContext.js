@@ -29,7 +29,7 @@ export const PolicyholderProvider = ({ children }) => {
   };
 
   const getFullTree = async (rootCode) => {
-    const url = `http://localhost:3000/api/policyholders?code=${rootCode}`;
+    const url = `http://localhost:3005/api/policyholders?code=${rootCode}`;
     const response = await fetch(url);
     const data = await response.json();
     // 返回增加 parent屬性的完整樹結構
